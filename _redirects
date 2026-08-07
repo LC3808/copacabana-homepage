@@ -1,0 +1,3 @@
+# Cloudflare Pages redirect rules
+# www to non-www (optional — configure in Cloudflare dashboard)
+# https://www.copacabana.co.kr/* https://copacabana.co.kr/:splat 301
