@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Service — Copacabana Co.</title>
-  <meta name="description" content="Muselry — 나만의 문화지도. Discover museums, art galleries, and cultural spaces across Korea with Copacabana Co.'s flagship app." />
+  <meta name="description" content="Muselry — 나만의 문화지도. 전국 박물관·미술관·과학관을 탐색하고 나만의 문화지도를 만들어가는 문화 라이프스타일 앱." />
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://copacabana.co.kr/service.html" />
-  <meta property="og:title"       content="Service — Copacabana Co." />
-  <meta property="og:description" content="Muselry — Discover museums, art galleries, and cultural spaces across Korea." />
-  <meta property="og:image"       content="https://copacabana.co.kr/assets/images/og-image.png" />
+  <meta property="og:title"       content="Muselry — Copacabana Co." />
+  <meta property="og:description" content="Muselry — 전국 박물관·미술관·과학관을 탐색하고 나만의 문화지도를 만들어가는 앱." />
+  <meta property="og:image"       content="https://copacabana.co.kr/assets/images/muselry-icon.png" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
@@ -23,6 +23,101 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    /* ---- Muselry App Icon ---- */
+    .muselry-app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      margin-bottom: 20px;
+    }
+
+    /* ---- Screenshots Gallery ---- */
+    .screenshots-section {
+      background: var(--bg-section);
+    }
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .screenshot-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .screenshot-item:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+    }
+    .screenshot-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .screenshots-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ---- Platform Badge ---- */
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+    .badge-live {
+      background: rgba(52, 199, 89, 0.12);
+      color: #1a8c3a;
+    }
+    .badge-soon {
+      background: rgba(232, 168, 124, 0.15);
+      color: var(--accent-dark);
+    }
+
+    /* ---- Stats row ---- */
+    .app-stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin: 28px 0;
+      padding: 24px 28px;
+      background: var(--bg-light);
+      border-radius: var(--radius-md);
+    }
+    .app-stat-item {
+      text-align: center;
+    }
+    .app-stat-num {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.03em;
+    }
+    .app-stat-label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+  </style>
 </head>
 <body>
 
@@ -46,8 +141,8 @@
   <div class="page-hero">
     <div class="container">
       <span class="section-eyebrow">Our Service</span>
-      <h1>Muselry</h1>
-      <p>나만의 문화지도 — Your personal cultural map. Discover, visit, and remember every cultural space that matters to you.</p>
+      <h1>뮤즐리(Muselry)</h1>
+      <p>나만의 문화지도 — 전국 박물관·미술관·과학관을 탐색하고 방문 기록을 남기며 나만의 문화지도를 완성하는 문화 라이프스타일 앱.</p>
     </div>
   </div>
 
@@ -56,90 +151,142 @@
     <div class="container">
       <div class="muselry-block">
         <div class="muselry-content">
-          <div class="muselry-badge">🏛️ Flagship Product</div>
-          <h2 class="muselry-title">Muselry</h2>
+          <img src="assets/images/muselry-icon.png"
+               alt="Muselry 앱 아이콘"
+               class="muselry-app-icon" />
+          <div class="muselry-badge">🏛️ Flagship Product · Now on Android</div>
+          <h2 class="muselry-title">뮤즐리(Muselry)</h2>
           <p class="muselry-subtitle">나만의 문화지도</p>
           <p class="muselry-desc">
-            Muselry is a cultural lifestyle platform for iOS and Android. It helps users explore thousands of museums, art galleries, science centers, and cultural venues across Korea — and build a personal map of every place they've visited or want to visit.
+            Muselry is a cultural exploration app that lets you discover and visit various cultural spaces across Korea — museums, art galleries, science centers, and more — to create your own personal cultural map.
           </p>
           <p class="muselry-desc">
-            Whether you're a seasoned culture enthusiast or just starting to explore, Muselry makes every outing more meaningful and every memory worth keeping.
+            전국 400개 이상의 문화공간 정보를 제공하며, 현재 위치 기반 검색, 방문 기록, 문화 레벨 시스템, 어린이 친화 시설 큐레이션까지 — 문화 생활의 모든 것을 한 앱에서.
           </p>
+          <div class="app-stats">
+            <div class="app-stat-item">
+              <span class="app-stat-num">400+</span>
+              <span class="app-stat-label">문화공간 등록</span>
+            </div>
+            <div class="app-stat-item">
+              <span class="app-stat-num">5개</span>
+              <span class="app-stat-label">문화 레벨 단계</span>
+            </div>
+            <div class="app-stat-item">
+              <span class="app-stat-num">전국</span>
+              <span class="app-stat-label">지역 커버리지</span>
+            </div>
+          </div>
           <div class="btn-group" style="justify-content: flex-start;">
             <a href="https://play.google.com/store/apps/details?id=com.muselry.muselry"
                target="_blank"
                rel="noopener"
                class="btn btn-primary">Get it on Google Play</a>
+            <a href="contact.html" class="btn btn-secondary">문의하기</a>
           </div>
         </div>
-        <div class="muselry-visual" aria-hidden="true">🏛️</div>
+        <div class="muselry-visual" aria-hidden="true">
+          <img src="assets/images/muselry-icon.png"
+               alt=""
+               style="width: 120px; height: 120px; border-radius: 28px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Screenshots ===== -->
+  <section class="screenshots-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">App Screenshots</span>
+        <h2>실제 앱 화면</h2>
+        <p>탐색, 지도, 마이페이지, 나의 문화지도 — Muselry의 주요 화면을 확인하세요.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot-item">
+          <img src="assets/images/muselry-ss1.png" alt="Muselry 탐색 화면 — 지역·유형·태그 필터" loading="lazy" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/muselry-ss2.png" alt="Muselry 지도 화면 — 전국 문화공간 핀" loading="lazy" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/muselry-ss3.png" alt="Muselry 마이페이지 — 방문 기록 및 문화 레벨" loading="lazy" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/muselry-ss4.png" alt="Muselry 나의 문화지도 — 방문·북마크 지도" loading="lazy" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/muselry-ss5.png" alt="Muselry 앱 화면 5" loading="lazy" />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== Features ===== -->
-  <section class="alt-bg">
+  <section>
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Features</span>
-        <h2>Everything you need<br>to explore culture</h2>
+        <h2>문화 탐색의 모든 것</h2>
+        <p>Muselry가 제공하는 핵심 기능을 확인하세요.</p>
         <div class="divider"></div>
       </div>
       <div class="feature-list">
         <div class="feature-item">
-          <div class="feature-icon">🗺️</div>
+          <div class="feature-icon">🔍</div>
           <div class="feature-text">
-            <h4>Cultural Space Discovery</h4>
-            <p>Browse thousands of museums, art galleries, science centers, and cultural venues across Korea. Filter by category, region, and rating.</p>
+            <h4>문화공간 탐색</h4>
+            <p>전국 박물관, 미술관, 과학관 등 400개 이상의 문화공간을 지역·유형·태그 필터로 손쉽게 탐색합니다.</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon">📍</div>
           <div class="feature-text">
-            <h4>Map-Based Search</h4>
-            <p>Find cultural spaces near you with an intuitive map interface. See what's around you and plan your next cultural outing with ease.</p>
+            <h4>지도 기반 검색</h4>
+            <p>현재 위치 기반으로 가까운 문화공간을 거리순으로 정렬해 보여줍니다. 지도와 리스트 뷰를 모두 지원합니다.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🗺️</div>
+          <div class="feature-text">
+            <h4>나의 문화지도</h4>
+            <p>방문한 공간이 지도 위에 쌓입니다. 내가 다녀온 곳, 가고 싶은 곳을 한눈에 확인하는 나만의 문화지도.</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon">📖</div>
           <div class="feature-text">
-            <h4>Visit Tracking</h4>
-            <p>Log every visit and build a personal history of your cultural experiences. Your own cultural map, growing with every trip.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">⭐</div>
-          <div class="feature-text">
-            <h4>Reviews &amp; Ratings</h4>
-            <p>Share your thoughts and read reviews from other culture enthusiasts. Help the community discover the best experiences.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-icon">🔖</div>
-          <div class="feature-text">
-            <h4>Bookmarks &amp; Wishlist</h4>
-            <p>Save places you want to visit and organize your cultural wishlist. Plan future visits with your personal collection.</p>
+            <h4>방문 기록</h4>
+            <p>방문 횟수, 다녀온 공간 수, 이번 달 방문 기록을 자동으로 집계합니다. 문화 활동의 역사가 쌓입니다.</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon">🏆</div>
           <div class="feature-text">
-            <h4>Culture Level System</h4>
-            <p>Earn points and level up as you explore more cultural spaces. Gamified exploration makes every visit rewarding.</p>
+            <h4>문화 레벨</h4>
+            <p>방문 기록이 쌓일수록 문화 레벨이 올라갑니다. 문화 큐레이터를 향해 나아가세요.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔖</div>
+          <div class="feature-text">
+            <h4>북마크 &amp; 리뷰</h4>
+            <p>가고 싶은 곳을 북마크하고, 다녀온 곳에 별점과 리뷰를 남겨 커뮤니티와 공유하세요.</p>
           </div>
         </div>
         <div class="feature-item">
           <div class="feature-icon">👶</div>
           <div class="feature-text">
-            <h4>Child-Friendly Recommendations</h4>
-            <p>Find cultural spaces with facilities and programs suitable for children. Perfect for families seeking educational outings.</p>
+            <h4>어린이 친화 시설 큐레이션</h4>
+            <p>아이와 함께 가기 좋은 어린이 전용·친화 시설을 별도로 큐레이션합니다. 주말 가족 나들이에 딱 맞습니다.</p>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon">🤖</div>
+          <div class="feature-icon">🏛️</div>
           <div class="feature-text">
-            <h4>AI-Powered Suggestions</h4>
-            <p>Smart recommendations based on your visit history, preferences, and location — so you always discover something new.</p>
+            <h4>운영 주체별 정보 제공</h4>
+            <p>국립·공립·사립으로 분류된 신뢰도 높은 문화공간 정보를 제공합니다. 전시 정보도 거리순으로 확인 가능합니다.</p>
           </div>
         </div>
       </div>
@@ -147,40 +294,54 @@
   </section>
 
   <!-- ===== Platform ===== -->
-  <section>
+  <section class="alt-bg">
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">Platform</span>
-        <h2>Available on iOS &amp; Android</h2>
-        <p>Muselry is being developed for both Apple iOS and Google Android platforms, ensuring the widest possible reach for cultural enthusiasts across Korea.</p>
+        <h2>지금 바로 다운로드</h2>
+        <p>Muselry는 Android에서 지금 바로 이용 가능합니다. iOS 버전도 준비 중입니다.</p>
         <div class="divider"></div>
       </div>
       <div class="card-grid" style="max-width: 640px; margin: 0 auto;">
         <div class="card" style="text-align: center;">
+          <div class="card-icon" style="margin: 0 auto 20px;">🤖</div>
+          <h3>Android</h3>
+          <p>Google Play에서 지금 바로 다운로드</p>
+          <div class="platform-badge badge-live">● Now Available</div>
+          <div style="margin-top: 20px;">
+            <a href="https://play.google.com/store/apps/details?id=com.muselry.muselry"
+               target="_blank"
+               rel="noopener"
+               class="btn btn-primary"
+               style="width: 100%; justify-content: center;">Get it on Google Play</a>
+          </div>
+        </div>
+        <div class="card" style="text-align: center;">
           <div class="card-icon" style="margin: 0 auto 20px;">🍎</div>
           <h3>iOS</h3>
           <p>iPhone &amp; iPad<br>App Store</p>
-          <p style="margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-weight: 600;">Coming Soon</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon" style="margin: 0 auto 20px;">🤖</div>
-          <h3>Android</h3>
-          <p>All Android Devices<br>Google Play</p>
-          <p style="margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-weight: 600;">Coming Soon</p>
+          <div class="platform-badge badge-soon">Coming Soon</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== CTA ===== -->
-  <section class="alt-bg" style="text-align: center;">
+  <section style="text-align: center;">
     <div class="container">
-      <span class="section-eyebrow">Stay Updated</span>
-      <h2 style="margin-bottom: 16px;">Be the first to know</h2>
+      <span class="section-eyebrow">Download Now</span>
+      <h2 style="margin-bottom: 16px;">지금 문화 탐험을 시작하세요</h2>
       <p style="max-width: 480px; margin: 0 auto 36px;">
-        Muselry is coming soon. Contact us to learn more about our launch plans or partnership opportunities.
+        전국 400개 이상의 문화공간이 기다리고 있습니다.<br>
+        Muselry와 함께 나만의 문화지도를 완성하세요.
       </p>
-      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.muselry.muselry"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">Get it on Google Play</a>
+        <a href="contact.html" class="btn btn-secondary">문의하기</a>
+      </div>
     </div>
   </section>
 
