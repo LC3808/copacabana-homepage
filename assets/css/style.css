@@ -339,13 +339,20 @@ section.alt-bg { background: var(--bg-section); }
 .muselry-subtitle { font-size: 1rem; color: var(--orange); font-weight: 600; margin-bottom: 20px; }
 .muselry-desc { font-size: 1rem; margin-bottom: 32px; }
 .muselry-visual {
-  background: transparent;
+  background: #fdebd8;
   border-radius: var(--radius-lg);
   aspect-ratio: 4/5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
+  padding: 32px;
+}
+.muselry-visual img {
+  background: #fdf0e0;
+  border-radius: 28px;
+  padding: 16px;
+  box-shadow: 0 4px 24px rgba(237, 100, 11, 0.12);
 }
 
 /* ---------- Stats ---------- */
