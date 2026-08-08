@@ -137,7 +137,7 @@ section.alt-bg { background: var(--bg-section); }
   color: var(--navy);
 }
 .nav-logo-text span {
-  color: var(--orange);
+  color: var(--navy);
 }
 
 .nav-links {
@@ -339,14 +339,13 @@ section.alt-bg { background: var(--bg-section); }
 .muselry-subtitle { font-size: 1rem; color: var(--orange); font-weight: 600; margin-bottom: 20px; }
 .muselry-desc { font-size: 1rem; margin-bottom: 32px; }
 .muselry-visual {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  background: transparent;
   border-radius: var(--radius-lg);
   aspect-ratio: 4/5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5rem;
-  box-shadow: var(--shadow-md);
 }
 
 /* ---------- Stats ---------- */
